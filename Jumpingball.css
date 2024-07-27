@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+
+#sky {
+  height: 533px;
+  background-color: rgb(200, 232, 244);
+}
+#table {
+  margin-left: 600px;
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  top: 383px;
+  background-color: rgb(163, 74, 18);
+}
+#ball {
+  margin-left: 700px;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 303px;
+  background-color: rgb(7, 49, 201);
+  border-radius: 100%;
+}
+#sun {
+  margin-left: 100px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 78px;
+  background-color: rgb(201, 136, 7);
+  border-radius: 100%;
+  background-image: radial-gradient(
+    circle,
+    rgb(255, 251, 0),
+    rgb(255, 217, 0),
+    rgb(221, 205, 82)
+  );
+  box-shadow: 0 0 10px 10px yellow;
+}
+#grass {
+  padding-top: 300px;
+}
+#ground {
+  height: 142px;
+  background-color: rgb(31, 236, 9);
+}
+#ball {
+  animation-name: ball;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ball {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -300px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
